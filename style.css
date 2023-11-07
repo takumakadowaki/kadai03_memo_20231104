@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+  }
+  input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+  }
+  button {
+    width: 60px;
+    padding: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-top: 10px;
+  }

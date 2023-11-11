@@ -82,3 +82,6 @@ document.getElementById('stockNumberInput').addEventListener('input', function()
   var stockName = stockMapping[stockNumber];
   document.getElementById('stockNameInput').value = stockName ? stockName : ''; // 修正されたID
 });
+
+// 追加ボタンにクリックイベントリスナーを設定
+document.getElementById('addBtn').addEventListener('click', addTradeMemo);

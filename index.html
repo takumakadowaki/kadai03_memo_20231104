@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>memo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>デイトレードメモ帳</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <input type="text" id="memoInput" placeholder="ここにメモを記入..."> <!-- メモを入力するテキストフィールド -->
-        <button id="addBtn">記録</button> <!-- メモを追加するボタン -->
-        <ul id="memoList"></ul> <!-- 追加されたメモを表示するリスト -->
-    </div>
-      
-    <script src="script.js"></script>
+
+<div class="container">
+  <h2>デイトレードメモ帳</h2>
+  <input type="date" id="dateInput" placeholder="日付">
+  <input type="number" id="stockNumberInput" placeholder="証券番号">
+  <input type="text" id="stockNameInput" placeholder="銘柄名">
+  <input type="number" id="purchasePriceInput" placeholder="購入価格">
+  <input type="number" id="salePriceInput" placeholder="売却価格">
+  <input type="text" id="memoInput" placeholder="メモ">
+  <button id="addBtn">追加</button>
+  
+  <ul id="tradeMemoList"></ul>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
